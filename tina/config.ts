@@ -7,6 +7,8 @@ const branch =
   process.env.HEAD ||
   "main";
 
+const buildPath = process.env.BUILD_PATH
+
 export default defineConfig({
   branch,
 
@@ -16,13 +18,14 @@ export default defineConfig({
   token: process.env.TINA_TOKEN,
 
   build: {
-    outputFolder: "admin",
-    publicFolder: "public",
+    basePath: buildPath,
+    outputFolder: "/admin",
+    publicFolder: "/",
   },
   media: {
     tina: {
-      mediaRoot: "",
-      publicFolder: "public",
+      mediaRoot: "/media",
+      publicFolder: "/",
     },
   },
   // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/schema/
