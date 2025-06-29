@@ -48,9 +48,7 @@ jobs:
     steps:
       - name: Setup Ruby
         # https://github.com/ruby/setup-ruby/releases/tag/v1.207.0
-        uses: ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4
-        with:
-          ruby-version: '3.2' # Not needed with a .ruby-version file
+        uses: ruby/setup-ruby@v1
 
 
   build:
@@ -60,20 +58,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # - name: Install Ruby and Bundler
-      #   uses: ruby/setup-ruby@v1
-      #   with:
-      #     ruby-version: 3.2  # adjust as needed
-      #     bundler-cache: true  # Automatically caches gems
-
-      # - name: Set up Node.js
-      #   uses: actions/setup-node@v4
-      #   with:
-      #     node-version: 20  # adjust as needed
-      #     cache: 'npm'
-
       - name: run NPM CI
-        run: npm ci
+        run: npm fund && npm ci
 
       - name: Build TinaCMS
         env:
