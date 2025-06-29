@@ -41,8 +41,7 @@ jobs:
     steps:
       - name: install Node
         uses: actions/setup-node@v4
-        with:
-          cache: "npm"
+
 
   configure-gems:
     runs-on: ubuntu-latest
