@@ -1,0 +1,20 @@
+navs:
+  - name: About Us
+    link: /about
+    drop: 'false'
+
+  - name: Resources
+    link: /fgsdafd
+    drop: 'false'
+
+  - name: Our Sponsors
+    link: /fgsdafd
+    drop: 'false'
+
+  - name: Sponsor Us
+    link: /fgsdafd
+    drop: 'false'
+
+  - name: Contact Us
+    link: /fgsdafd
+    drop: 'false'

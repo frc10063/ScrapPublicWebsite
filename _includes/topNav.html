@@ -1,0 +1,37 @@
+<nav class="container-fluid navbar navbar-expand-sm bg-pink-pattern navbar-dark rounded-bottom border-bottom border-1 border-dark shadow-lg">
+  <div class="container-fluid px-5 ml-5">
+    <div class="navbar-brand d-inline-flex ml-5">
+      <a href="/">
+        <img class="navbar-brand pb-0 pt-0 m-0" style="width:80px;" src="/private/brand/logo/gearWord/whiteBG.png">
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+      <ul class="navbar-nav text-light ">
+        {% for item in site.data.topNav.navs %}
+        {% if item.drop and item.drop == "false" %}
+          <li class="nav-item text-xl-center text-bold m-3 h5 bg-pink rounded">
+            <a class="text-xl-center nav-link h1 active text-bold" href="{{ item.link | {{absolute_url}}">
+            {{ item.name }}
+            </a>
+          </li>
+
+        {% else %}
+          <li class="nav-item dropdown">
+            <a class="text-xl-center nav-link dropdown-toggle text-nowrap" href="#" id="navbardrop" data-toggle="dropdown">
+              {{item.name}}
+            </a>
+            <div class="dropdown-menu">
+              {% for url in item.links %}
+                <a class="dropdown-item text-nowrap" href="{{url.url | absolute_url}}">{{url.name | capitalcase}}</a>
+              {% endfor %}
+            </div>
+          </li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>

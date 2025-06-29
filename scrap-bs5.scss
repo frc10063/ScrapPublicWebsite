@@ -1,0 +1,171 @@
+
+/*------------------------------------
+- COLOR pink
+------------------------------------*/
+
+$pink_t1: #d33769;
+$pink_t2: #b02652;
+$pink_t3: #efb8ca;
+$pink_t4: #f4cdd9;
+$pink_t5: #751937;
+$pink_t6: #a3244c;
+$pink_t7: #bc2958;
+$pink_t8: #4b1023;
+$pink_t9: #f7dee6;
+
+$pink_shadow: rgba(211, 55, 105, 0.5);
+$pink_text_color_dark_bright: #fff;
+
+
+.alert-pink {
+  color: $pink_t5;
+  background-color: $pink_t9;
+  border-color: $pink_t4;
+}
+
+.alert-pink hr {
+  border-top-color: $pink_t3;
+}
+
+.alert-pink .alert-link {
+  color: $pink_t8;
+}
+
+.badge-pink {
+  color: $pink_text_color_dark_bright;
+  background-color: $pink_t1;
+}
+
+.badge-pink[href]:hover, .badge-pink[href]:focus {
+  color: $pink_text_color_dark_bright;
+  background-color: $pink_t2;
+}
+
+.bg-pink {
+  background-color: $pink_t1 !important;
+}
+
+a.bg-pink:hover, a.bg-pink:focus,
+button.bg-pink:hover,
+button.bg-pink:focus {
+  background-color: $pink_t2 !important;
+}
+
+.border-pink {
+  border-color: $pink_t1 !important;
+}
+
+.btn-pink {
+  color: $pink_text_color_dark_bright;
+  background-color: $pink_t1;
+  border-color: $pink_t1;
+}
+
+.btn-pink:hover {
+  color: $pink_text_color_dark_bright;
+  background-color: $pink_t7;
+  border-color: $pink_t2;
+}
+
+.btn-pink:focus, .btn-pink.focus {
+  box-shadow: 0 0 0 0.2rem $pink_shadow;
+}
+
+.btn-pink.disabled, .btn-pink:disabled {
+  color: $pink_text_color_dark_bright;
+  background-color: $pink_t1;
+  border-color: $pink_t1;
+}
+
+.btn-pink:not(:disabled):not(.disabled):active, .btn-pink:not(:disabled):not(.disabled).active, .show > .btn-pink.dropdown-toggle {
+  color: $pink_text_color_dark_bright;
+  background-color: $pink_t2;
+  border-color: $pink_t6;
+}
+
+.btn-pink:not(:disabled):not(.disabled):active:focus, .btn-pink:not(:disabled):not(.disabled).active:focus, .show > .btn-pink.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem $pink_shadow;
+}
+
+.btn-outline-pink {
+  color: $pink_t1;
+  background-color: transparent;
+  border-color: $pink_t1;
+}
+
+.btn-outline-pink:hover {
+  color: $pink_text_color_dark_bright;
+  background-color: $pink_t1;
+  border-color: $pink_t1;
+}
+
+.btn-outline-pink:focus, .btn-outline-pink.focus {
+  box-shadow: 0 0 0 0.2rem $pink_shadow;
+}
+
+.btn-outline-pink.disabled, .btn-outline-pink:disabled {
+  color: $pink_t1;
+  background-color: transparent;
+}
+
+.btn-outline-pink:not(:disabled):not(.disabled):active, .btn-outline-pink:not(:disabled):not(.disabled).active, .show > .btn-outline-pink.dropdown-toggle {
+  color: $pink_text_color_dark_bright;
+  background-color: $pink_t1;
+  border-color: $pink_t1;
+}
+
+.btn-outline-pink:not(:disabled):not(.disabled):active:focus, .btn-outline-pink:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-pink.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem $pink_shadow;
+}
+
+.list-group-item-pink {
+  color: $pink_t5;
+  background-color: $pink_t4;
+}
+
+.list-group-item-pink.list-group-item-action:hover, .list-group-item-pink.list-group-item-action:focus {
+  color: $pink_t5;
+  background-color: $pink_t3;
+}
+
+.list-group-item-pink.list-group-item-action.active {
+  color: $pink_text_color_dark_bright;
+  background-color: $pink_t5;
+  border-color: $pink_t5;
+}
+
+.table-pink,
+.table-pink > th,
+.table-pink > td {
+  background-color: $pink_t4;
+}
+
+.table-hover .table-pink:hover {
+  background-color: $pink_t3;
+}
+
+.table-hover .table-pink:hover > td,
+.table-hover .table-pink:hover > th {
+  background-color: $pink_t3;
+}
+
+.text-pink {
+  color: $pink_t1 !important;
+}
+
+a.text-pink:hover, a.text-pink:focus {
+  color: $pink_t2 !important;
+}
+
+
+// Overide text fonts
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat" !important;
+    font-weight: 900;
+}
+p, .lead, .small, .mark, .blockquote, .blockquote p {
+    font-family: "Inter" !important;
+    font-weight: 400;
+}
+

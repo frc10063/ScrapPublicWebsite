@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "tinacms": "^2.7.3"
   },
   "devDependencies": {
